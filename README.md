@@ -1,42 +1,46 @@
 # Movie Data Pipeline
 
-This project demonstrates a robust ETL (Extract, Transform, Load) pipeline built using Python for processing movie datasets. It showcases skills in data engineering, Python programming, database management, and data visualization.
+This project is a Python-based ETL (Extract, Transform, Load) pipeline designed to process movie datasets. It extracts data from CSV files, cleans it, transforms it, loads it into a MySQL database, and generates visualizations and analytical queries.
 
-## Key Highlights
+## Technologies Used
 
-- Extracts raw movie data from CSV files and cleans it to ensure quality and consistency.
-- Transforms data into a structured format suitable for advanced analytics.
-- Loads data into a MySQL database using SQLAlchemy, demonstrating backend integration.
-- Generates insightful visualizations of movie genres and trends with Python plotting libraries.
-- Includes SQL queries for detailed data analysis.
-
-## Technologies & Tools
-
-- Python 3.14, Pandas, SQLAlchemy, PyMySQL
-- MySQL as relational database
+- Python 3.14, Pandas for data manipulation
+- SQLAlchemy for ORM and database interaction
+- PyMySQL as MySQL database driver
+- MySQL for data storage and querying
 - Git for version control and GitHub for repository hosting
-- Virtual environments and dependency management
+- Python virtual environments for dependency management
 
-## Setup & Usage
+## Environment Setup
 
-1. Clone this repo:git clone https://github.com/00Bhavani/movie-data-pipeline.git
+1. Clone the repository:git clone https://github.com/00Bhavani/movie-data-pipeline.git
 cd movie-data-pipeline
 
-2. Create & activate Python virtual environment:"/c/Program Files/Python314/python.exe" -m venv env
-source env/Scripts/activate
+2. Create and activate a Python virtual environment:
+- On Windows (Git Bash):
+  ```
+  "/c/Program Files/Python314/python.exe" -m venv env
+  source env/Scripts/activate
+  ```
 
-3. Install dependencies:pip install -r requirements.txt
+3. Install dependencies:
+pip install -r requirements.txt
 
-4. Configure database connection in `.env` file.
+4. Configure database connection details in the `.env` file.
 
-5. Run ETL pipeline:python etl_pipeline.py
+## Running the ETL Pipeline
 
-6. Generate visual reports:python visualize_results.py
+Run the following command to extract, transform, and load your movie data into MySQL:
+python etl_pipeline.py
 
-=>
-## Why This Project?
-This ETL pipeline project reflects my ability to build end-to-end data workflows, prepare data for analysis, and create actionable insights. It underscores proficiency in Python, database interaction, and data visualization—key skills for data engineering roles.
+## Generating Visualizations and Running Queries
+- To generate charts and graphs from the data:
+python visualize_results.py
+
+- Use MySQL Workbench or another MySQL client to run SQL queries contained in `queries.sql` for deeper analysis.
+
+This project showcases abilities in Python scripting, data engineering, SQL database management, and data visualization, providing full end-to-end data pipeline implementation.
 
 ## Author
-Bhavani Shree CG
 
+Bhavani Shree CG
